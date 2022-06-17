@@ -23,7 +23,7 @@ namespace ExHeranca_POO
             this.salario = salario;
         }
 
-        public static double calcularBonificacao(double Salario)
+        public virtual double calcularBonificacao(double Salario)
         {
             Salario = Salario * 1.1;
             return Salario;
@@ -32,7 +32,7 @@ namespace ExHeranca_POO
         public static void imprimirDados(Funcionario funcionario)
         {
             Console.WriteLine($"O salário de {funcionario.Nome} é R${Math.Round(funcionario.Salario, 2)}");
-            Console.WriteLine($"Após bonificação, o salário de {funcionario.Nome} passou para R${Math.Round(Funcionario.calcularBonificacao(funcionario.Salario), 2)}");
+            Console.WriteLine($"Após bonificação, o salário de {funcionario.Nome} passou para R${Math.Round(funcionario.calcularBonificacao(funcionario.Salario), 2)}");
             Console.WriteLine(Environment.NewLine);        
         }
     }

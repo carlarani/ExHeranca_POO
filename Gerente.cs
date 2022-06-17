@@ -24,5 +24,11 @@ namespace ExHeranca_POO
             get { return senha; }
             set { senha = value; }
         }
+
+        public override double calcularBonificacao(double Salario)
+        {
+            Salario = Salario * 1.5;
+            return Salario;
+        }
     }
 }
