@@ -22,6 +22,12 @@ namespace ExHeranca_POO
             this.nome = nome;
             this.salario = salario;
         }
+
+        public static double calcularBonificacao(double Salario)
+        {
+            Salario = Salario * 1.1;
+            return Salario;
+        }
     }
     
     
@@ -49,6 +55,9 @@ namespace ExHeranca_POO
             Console.WriteLine($"GERENTE: O salário de {func06.Nome} é R${func06.Salario}");
             Console.WriteLine($"TELEFONISTA: O salário de {func07.Nome} é R${func07.Salario}");
             Console.WriteLine($"SECRETARIA: O salário de {func08.Nome} é R${func08.Salario}");
+
+            Console.WriteLine($"O salário de {func01.Nome} é R${func01.Salario}");
+            Console.WriteLine($"Após bonificação, o salário de {func01.Nome} passou para R${Funcionario.calcularBonificacao(func01.Salario)}");
 
         }
     }
