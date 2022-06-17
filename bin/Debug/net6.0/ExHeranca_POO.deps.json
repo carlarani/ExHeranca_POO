@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ExHeranca_POO/1.0.0": {
+        "runtime": {
+          "ExHeranca_POO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExHeranca_POO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
