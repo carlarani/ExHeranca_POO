@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace ExHeranca_POO
 {
-    internal class Secretaria
+    class Secretaria : Funcionario
     {
+        public Secretaria(string nome, double salario) : base(nome, salario)
+        {
+        }
+
+        public int ramal;
     }
 }

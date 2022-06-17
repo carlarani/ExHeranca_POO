@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace ExHeranca_POO
 {
-    internal class Telefonista
+    class Telefonista : Funcionario
     {
+        public Telefonista(string nome, double salario) : base(nome, salario)
+        {
+        }
+
+        public int estacaoDeTrabalho;
     }
 }
