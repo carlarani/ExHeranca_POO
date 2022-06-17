@@ -8,8 +8,10 @@ namespace ExHeranca_POO
 {
     class Gerente : Funcionario
     {
-        public Gerente(string nome, double salario) : base(nome, salario)
+        public Gerente(string nome, double salario, string nomeDeUsuario, string senha) : base(nome, salario)
         {
+            this.nomeDeUsuario = nomeDeUsuario;
+            this.senha = senha;
         }
 
         private string nomeDeUsuario;
@@ -18,6 +20,7 @@ namespace ExHeranca_POO
             get { return nomeDeUsuario; }
             set { nomeDeUsuario = value; }
         }
+
         private string senha;
         public string Senha
         {
@@ -29,6 +32,13 @@ namespace ExHeranca_POO
         {
             Salario = Salario * 1.5;
             return Salario;
+        }
+
+        public override void imprimirDados(Funcionario funcionario)
+        {
+            Console.WriteLine($"O salário de {funcionario.Nome} era R${Math.Round(funcionario.Salario, 2)}. Após a bonificação exclusiva de gerentes ficou R${Math.Round(funcionario.calcularBonificacao(funcionario.Salario), 2)}.");
+            Console.WriteLine($"Para maior detalhes, acesse a intranet atraves do seu login:{NomeDeUsuario}.");
+            Console.WriteLine(Environment.NewLine);
         }
     }
 }
