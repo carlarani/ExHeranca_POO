@@ -31,8 +31,7 @@ namespace ExHeranca_POO
 
         public static void imprimirDados(Funcionario funcionario)
         {
-            Console.WriteLine($"O salário de {funcionario.Nome} é R${Math.Round(funcionario.Salario, 2)}");
-            Console.WriteLine($"Após bonificação, o salário de {funcionario.Nome} passou para R${Math.Round(funcionario.calcularBonificacao(funcionario.Salario), 2)}");
+            Console.WriteLine($"O salário de {funcionario.Nome} era R${Math.Round(funcionario.Salario, 2)}. Após a bonificação ficou R${Math.Round(funcionario.calcularBonificacao(funcionario.Salario), 2)}.");
             Console.WriteLine(Environment.NewLine);        
         }
     }
